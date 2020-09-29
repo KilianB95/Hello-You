@@ -31,5 +31,5 @@ if antwoord2 == "a" or antwoord2 == "A":
 if antwoord2 == "b" or antwoord2 == "B":
     print("je zit dichtbij, ik ben 25")
 if antwoord2 == "c" or antwoord2 == "C":
-    print("dat is inderdaad juist ik ben 25")
+    print("dat is inderdaad juist ik ben 25") 
 
