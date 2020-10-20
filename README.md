@@ -10,7 +10,7 @@
 
 #### 3. Ditbenik.py is ook een textbased applicatie is meer een uitbreiding van het helloyou.py bestand.  Daarnaast staat hier ook de code met die ik heb gemaakt.
 
-#### 4. Microbiy link Youtube.pdf is een link naar Youtube naar waar ik laat zien hoe ik interactie heb met de microbit.
+#### 4. Microbit link Youtube.pdf is een link naar Youtube naar waar ik laat zien hoe ik interactie heb met de microbit.
 
 #### 5. OnderzoekTextbasedGameVerhaal.pdf is een onderzoek naar wat voor verhaal ik ga maken voor mijn Textbased Game. hier wordt in uitgelegd wat waarom en hoe.
 
