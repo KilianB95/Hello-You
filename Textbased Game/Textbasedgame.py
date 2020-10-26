@@ -1,0 +1,66 @@
+# Instructions Textbased game your choice will make the story. You have different choices in directions input()
+# First prologue(Epilogue) a little story about the attack of Japan in Indonesia.
+# There will be choices made of how the game will start after the prologue.
+# You play as a person who works for the Sultan of Borneo(Kalimatan) and this is his story.
+
+def option_story1():
+    print("---------------------------------------------------")
+
+
+def option_prologue3():
+    print("---------------------------------------------------")
+    print("You see a hole next to you, you crawl desperatly towards the hole.\nYou play dead and you hope that you won't be seen.\nSuddenly you pass away after a few hours you awaken.\nWhen you open your eyes you see that you are in a cabin you look around and see that you are in a hospik cabin.\nYou see a sergeant and you call him.\nThe sergeant looks at you and walks towards you and asks how you are and if you are willing to tel the story of what happend.\nYou say yes and you tell the sergeant the story.\nAlso if you type in yes the story will start.")
+    ant4 = input("yes:")
+
+    if ant4 == "yes" or ant4 == "YES":
+        option_story3()
+
+
+def option_prologue2():
+    print("---------------------------------------------------")
+    print("You look at the battle you see a lot of people die.\nWhen seeing all those people die you chose to run away from the battle.\nYou try to get back to the forest but when you are almost there you get hit by a bullet and you died immediatly.\nNow the prologue has ended you have two choices to make yes or run\nYes wil start the story from the start and run will start the game when you'll get chased.")
+    ant3 = input("yes or run:")
+
+    if ant3 == "yes" or ant3 == "YES":
+          option_story1()
+    elif ant3 == "run" or ant3 == "RUN":
+        option_story2()
+
+
+def option_prologue1():
+    print("---------------------------------------------------")
+    print("You charge into the battlefield with a warcry RAAARGGGGHHHH!!!!\nYou feel the adrenaline rush flowing through your body.\nYou begin to shoot recklessly but then suddenly you get shot.\nYou fall on the ground and you know you are done for.\nBut in your thoughts you know you can still survive if you do something.\nYou see next to you a hole in the ground what was made by a mortar.\nWhat will you do go in there and hide or scream for help.")
+    ant2 = input("hide or help:")
+    
+
+    if ant2 == "hide" or ant2 == "HIDE":
+        option_prologue3()
+    elif ant2 == "help" or ant2 == "HELP":
+        option_story2()
+          
+
+def prologue():
+    print("---------------------------------------------------")
+    print("It is December 16th 1941 Japan attacks the island called Borneo.\nYou hear about the attack and you get deployed immediatly towards the battle.\nWhen you arrive at the battlefield you see that the Japanese forces are to strong to fight against.\n What will you do fight them or run away from the battle.")
+    ant1 = input("fight or run:")
+    
+
+    if ant1 == "fight" or ant1 == "FIGHT":
+        option_prologue1()
+    elif ant1 == "run" or ant1 == "RUN":
+        option_prologue2()
+
+
+
+print("Welcome at my textbased game about ..... first you will have an list of instructions.")
+print("After the instructions the game will start, it will start with a prolugue.")
+print("Where your choices are crucial for the start of the game/storyline goodluck")
+print("Intructions: The choices you can make are made with North, East, South, West, Yess, No, Run, Hide or Fight")
+print("These options will be shown of which choice is available to choose.")
+print("Type yes to start the game")
+choice = input()
+
+prologue()
+
+
+
