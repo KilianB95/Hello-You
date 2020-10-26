@@ -3,6 +3,29 @@
 # There will be choices made of how the game will start after the prologue.
 # You play as a person who works for the Sultan of Borneo(Kalimatan) and this is his story.
 
+def option_story1_5():
+    print("---------------------------------------------------")
+    print("You and your family part ways they go towards the palace and you are going to the streets to get people to safety.\nAfter your arrival there you here that the japanese has entered the city.\nYou look shocked and try to get the last few people into safety before you can get yourself into safety.\nBut when you try to safe a person you see that the japanese soldiers are approaching you fast.\nYou have to make a quick decision, hide or run.")
+    ant9 = input("hide or run:")
+
+    if ant9 == "hide" or ant9 == "HIDE":
+        option_story4()
+    elif ant9 == "run" or ant9 == "RUN":
+        option_story2()
+
+
+
+def option_story1_4():
+    print("---------------------------------------------------")
+    print("You go together with your family towards the palace, when you arrive at the palace you see that the soldiers are preparing defences.\nYou look at the soldiers and then you look at your family.\nWhat will you do help the soldiers and let your family walk on their own further to the palace.\nOr will you go together with your family towards the palace.")
+    ant8 = input("defences or family:")
+
+    if ant8 == "defences" or ant8 == "DEFENCES":
+        option_story1_8()
+    elif ant8 == "family" or ant8 == "FAMILY":
+        option_story1_9()
+    
+
 
 
 def option_story1_3():
@@ -23,9 +46,9 @@ def option_story1_2():
     ant6 = input("palace or help:")
 
     if ant6 == "palace" or ant6 == "PALACE":
-        option_story1_4:
+        option_story1_4()
     elif ant6 == "help" or ant6 == "HELP":
-        option_story1_5:
+        option_story1_5()
             
     
 def option_story1():
