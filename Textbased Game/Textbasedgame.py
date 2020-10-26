@@ -3,13 +3,45 @@
 # There will be choices made of how the game will start after the prologue.
 # You play as a person who works for the Sultan of Borneo(Kalimatan) and this is his story.
 
+
+
+def option_story1_3():
+    print("---------------------------------------------------")
+    print("You run towards the palace after a few minutes you arrive at the palace.\nYou go inside the palace and asks where the sultan is you are given directions of where his whereabouts are.\nYou walk towards the directions given to you, and you see the Sultan.\nHe greets you and you immediatly tells the story you heard on the streets.\nWhere he replies that he knows about it and that he allready informed the soldiers to get people to safety.\nYou sigh of relieving and say that you are getting your family where the Sultan replies that they are allready been brought to safety into the palace.\nThe Sultan asks you to stay here and help the soldiers to prepare defences.\nWhen you reply that that the you can also help with getting more people to safety.\The choice is yours says the Sultan.\nWhat will you do prepare defences or helping people to get to safety.")
+    ant7 = input("defences or help:")
+
+    if ant7 == "defences" or ant7 == "DEFENCES":
+        option_story1_8()
+    elif ant7 == "help" or ant7 == "HELP":
+        option_story2()
+    
+
+
+def option_story1_2():
+    print("---------------------------------------------------")
+    print("You run towards home after a few minutes later you arrive at home.\nHoping everybody is home you feel relieved that everybody is home and starts telling with what is going on.\nAfter telling them you tell them to go to the palace for safety.\nYour family asks what you will do.\nWill you go with them to the palace for safety or will you go helpin people get to safety in the city.")
+    ant6 = input("palace or help:")
+
+    if ant6 == "palace" or ant6 == "PALACE":
+        option_story1_4:
+    elif ant6 == "help" or ant6 == "HELP":
+        option_story1_5:
+            
+    
 def option_story1():
     print("---------------------------------------------------")
+    print("You walk down the street and hear people talking about an attack of the Japanese army.\nYou stop walking and you try to listen to the conversation.\nWhen you listen to the conversation you hear that the Japanese army has succeded to invade the first part of the island.\nWhen hearing this you want to decide to run towards home or towards the palace of the Sultan.\type home to go towards home, type palace to go to the Sultan.")
+    ant5 = input("home or palace:")
 
+    if ant5 == "home" or ant5 == "HOME":
+        option_story1_2()
+    elif ant5 == "palace" or ant5 == "PALACE":
+        option_story1_3()
 
+        
 def option_prologue3():
     print("---------------------------------------------------")
-    print("You see a hole next to you, you crawl desperatly towards the hole.\nYou play dead and you hope that you won't be seen.\nSuddenly you pass away after a few hours you awaken.\nWhen you open your eyes you see that you are in a cabin you look around and see that you are in a hospik cabin.\nYou see a sergeant and you call him.\nThe sergeant looks at you and walks towards you and asks how you are and if you are willing to tel the story of what happend.\nYou say yes and you tell the sergeant the story.\nAlso if you type in yes the story will start.")
+    print("You see a hole next to you, you crawl desperatly towards the hole.\nYou play dead and you hope that you won't be seen.\nSuddenly you pass away after a few hours you awaken.\nWhen you open your eyes you see that you are in a cabin you look around and see that you are in a hospik cabin.\nYou see a sergeant and you call him.\nThe sergeant looks at you and walks towards you and asks how you are and if you are willing to tel the story of what happend.\nYou say yes and you tell the sergeant the story.\nAfter you told the story the Sergeant tells you that Japan has succeed to invade further into the island and has already taken several villages and sieging towns and cities.\nYou know after hearing this that you've lost to defend the people of Borneo and that only a miracle can appear to win this war.\nIf you type in yes the story will start.")
     ant4 = input("yes:")
 
     if ant4 == "yes" or ant4 == "YES":
