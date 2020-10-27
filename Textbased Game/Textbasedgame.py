@@ -3,6 +3,95 @@
 # There will be choices made of how the game will start after the prologue.
 # You play as a person who works for the Sultan of Borneo(Kalimatan) and this is his story.
 
+def option_story1_13():
+    print("---------------------------------------------------")
+    print("You decide to wait and to let your family escape")
+
+
+
+def option_story1_12():
+    print("---------------------------------------------------")
+    print("You and your family try to escape from the palace.\nBut when you approach the outside of the palace you see japanese soldiers standing there aiming there weapons at you.\nThe only thing you could do is to surrender")
+    ant16 = input("surrender:")
+
+    if ant16 == "surrender" or ant16 == "SURRENDER":
+        option_story3()
+
+
+
+
+def option_story1_11():
+    print("---------------------------------------------------")
+    print("You go to the whereabouts of the sultan but when you arrive there you see that no one is there.\nSuddenly you hear some noices behind a door you open the door.\nYou see a soldier laying there and he says that everybody has been captured by the japanese soldier.\nHe tells that the japanese knew about this secret exit.\nYou run back to the hall to go back towards the secret exit.\nBut when you arrive in the hall you see the Japanese soldiers pointing there weapons at you.\nWhat will you do surrender or run?")
+    ant15 = input("surrender or run:")
+
+    if ant15 == "surrender" or ant15 == "SURRENDER":
+        option_story3()
+    elif ant15 == "run" or ant15 == "RUN":
+        option_dead1()
+
+
+
+
+def option_story1_10():
+    print("---------------------------------------------------")
+    print("You go towards the whereabouts of your family but when you arrive there.\nYou see that the Japanese soldiers has taken your family and others as captives.\nBut they see you and scream something in japanese.\nYou look at your weapon are you going to fight and try to rescue them or will you surrender?.")
+    ant14 = input("shoot or surrender:")
+
+    if ant14 == "shoot" or ant14 == "SHOOT":
+        option_story3_2()
+    elif ant14 == "surrender" or ant14 == "SURRENDER":
+        option_story3()
+
+
+
+
+def option_story1_9():
+    print("---------------------------------------------------")
+    print("You look at the soldier and take the weapon with you.\nAn officer comes to you and gives you orders of where he wants you defend the area.\nYou go there and are staying your ground after a few minutes you see that the Japanese soldiers are approaching.\nWithout hesitation you begin to shoot while you shoot the rest of the soldiers are shooting.\nBullets are flying around you and you see that soldiers are dying one for one.\nAre you staying and fight further or will you try to run away?")
+    ant13 = input("fight or run:")
+
+    if ant13 == "fight" or ant13 == "FIGHT":
+        option_dead()
+    elif ant13 == "run" or ant13 == "RUN":
+        option_story3_1()
+
+
+
+def option_story1_8():
+    print("---------------------------------------------------")
+    print("Together with your family you walk further to the palace.\nYou approach the palace and two guards are standing outside, you ask them where you should head to?\nWhen they reply that inside the palace will be further instructions.\nYou go inside and see a officer standing there giving orders and directions.\nYou approach the officer and you ask where to go, he informs you that you have to go towards the back of palace.\nYou tell your family what the officer said you bring them to the back of the palace.\nYou go towards the back with your family when you approach the back of palace you hear and see a soldier standing there giving orders.\nThe orders he gives is to go through this door to escape.\nWhat will you do escape the palace or will you wait inside?")
+    ant12 = input("escape or wait:")
+
+    if ant12 == "escape" or ant12 == "ESCAPE":
+        option_story1_12()
+    elif ant12 == "wait" or ant12 == "WAIT":
+        option_story1_13()
+
+
+
+def option_story1_7():
+    print("---------------------------------------------------")
+    print("You tell the soldier that you go inside the palace and stay there to protect the people there.\nThe soldier looks at you and says here take this weapon with you for some protection.\nYou take the weapon, then immediatly you run towards the palace.\nWhen approaching the palace you see that the door is locked.\nYou desperatly knock on the door when you do so you hear a guard saying who is there.\nWhile you reply with who you are and the door gets unlocked.\nYou ask the guards where your family and where the Sultan is, they give you the directions of where they are.\nAre you going to your family or to the Sultan.")
+    ant11 = input("family or sultan:")
+
+    if ant11 == "family" or ant11 == "FAMILY":
+        option_story1_10()
+    elif ant11 == "sultan" or ant11 == "SULTAN":
+        option_story1_11()
+
+
+
+def option_story1_6():
+    print("---------------------------------------------------")
+    print("You are going to help the soldiers with preparing defences.\nOne of the soldiers asks you to help him with moving some sand bags infront of the gate.\nWhile helping the soldier you suddenly hear loud screams and loud BANG BANG.\nThat moment you knew that the Japanese soldiers are almost there.\nOne of the soldiers comes running to you and say's grab a weapon or run inside the palace.\nWhile you look at him you make a decision.")
+    ant10 = input("weapon or inside:")
+
+    if ant10 == "weapon" or ant10 == "WEAPON":
+        option_story1_9()
+    elif ant10 == "inside" or ant10 == "INSIDE":
+        option_story1_7()
+
 def option_story1_5():
     print("---------------------------------------------------")
     print("You and your family part ways they go towards the palace and you are going to the streets to get people to safety.\nAfter your arrival there you here that the japanese has entered the city.\nYou look shocked and try to get the last few people into safety before you can get yourself into safety.\nBut when you try to safe a person you see that the japanese soldiers are approaching you fast.\nYou have to make a quick decision, hide or run.")
@@ -21,9 +110,9 @@ def option_story1_4():
     ant8 = input("defences or family:")
 
     if ant8 == "defences" or ant8 == "DEFENCES":
-        option_story1_8()
+        option_story1_6()
     elif ant8 == "family" or ant8 == "FAMILY":
-        option_story1_9()
+        option_story1_8()
     
 
 
@@ -34,7 +123,7 @@ def option_story1_3():
     ant7 = input("defences or help:")
 
     if ant7 == "defences" or ant7 == "DEFENCES":
-        option_story1_8()
+        option_story1_6()
     elif ant7 == "help" or ant7 == "HELP":
         option_story2()
     
@@ -107,10 +196,10 @@ def prologue():
 
 
 
-print("Welcome at my textbased game about ..... first you will have an list of instructions.")
+print("Welcome at my textbased game about a man who worked for the sultan the game is based on true stories and bit fictional\nFirst you will have an list of instructions.")
 print("After the instructions the game will start, it will start with a prolugue.")
 print("Where your choices are crucial for the start of the game/storyline goodluck")
-print("Intructions: The choices you can make are made with North, East, South, West, Yess, No, Run, Hide or Fight")
+print("Intructions: The choices you can make are displayed at every part of the game. (example fight or run)")
 print("These options will be shown of which choice is available to choose.")
 print("Type yes to start the game")
 choice = input()
