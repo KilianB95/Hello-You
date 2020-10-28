@@ -3,9 +3,49 @@
 # There will be choices made of how the game will start after the prologue.
 # You play as a person who works for the Sultan of Borneo(Kalimatan) and this is his story.
 
+def option_story2_1():
+    print("---------------------------------------------------")
+    print("You went to left side, but when you do you see that soldiers are coming from that side aswel.\nWhat will you do go surrender or go back?")
+    ant20 = input("back or surrender:")
+
+    if ant20 == "back" or ant20 == "BACK":
+        option_story2_3()
+    elif ant20 == "surrender" or ant20 == "SURRENDER":
+        option_story3()
+
+
+
+def option_story2():
+    print("---------------------------------------------------")
+    print("You get chased by the japanese soldiers on the streets.\nYou run as fast as you can but then you get at the end of the street and see that there are two options left or right.\nWhich way do you go?")
+    ant19 = input("left or right:")
+
+    if ant19 == "left" or ant19 == "LEFT":
+        option_story2_1()
+    elif ant19 == "right" or ant19 == "RIGHT":
+        option_story2_2()
+
+
+
+def option_story1_14():
+    print("---------------------------------------------------")
+    print("You went to investigate the scream beyond the secret exit.\nWhen you get there you see japanese soldiers taking all the poeple captive who took the secret passage.\nOne of the soldiers sees you and points his gun at you what will you do?\nRun or surrender?")
+    ant18 = input("run or surrender:")
+
+    if ant18 == "run" or ant18 == "RUN":
+        option_dead2()
+    elif ant18 == "surrender" or ant18 == "SURRENDER":
+        option_story3()
+
+
+
 def option_story1_13():
     print("---------------------------------------------------")
-    print("You decide to wait and to let your family escape")
+    print("You decide to wait and to let your family escape.\nWhile you wait for more people to use the secret exit you hear a sudden scream from beyond the secret exit.\nYou go and investigate the scream")
+    ant17 = input("investigate:")
+
+    if ant17 == "investigate" or ant17 == "INVESTIGATE":
+        option_story1_14()
 
 
 
