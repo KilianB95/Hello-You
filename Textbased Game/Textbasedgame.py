@@ -1,11 +1,91 @@
 # Instructions Textbased game your choice will make the story. You have different choices in directions input()
-# First prologue(Epilogue) a little story about the attack of Japan in Indonesia.
+# First prologue a little story about the attack of Japan in Indonesia.
 # There will be choices made of how the game will start after the prologue.
 # You play as a person who works for the Sultan of Borneo(Kalimatan) and this is his story.
 
+
+
+
+
+def option_dead6():
+    print("---------------------------------------------------")
+    print("You and your family are brought towards the nearby airport in south-east Borneo. where a terrible fate is waiting for you and your family.\nAt the airport you get executed together with you family except for your newborn baby.\nHe got spared, he eventually got brought towards The Netherlands.\nTowards his family who lives there, he grew up in The Netherlands and had a great time here.\nHe is still alive and well.\nThis is the true ending.")
+    ant38 = input("type exit:")
+
+    if ant38 == "exit" or ant38 == "EXIT":
+        exit()
+
+
+def option_dead5():
+    print("---------------------------------------------------")
+    print("You are brought to the airport with 24 others. The moment you arrive at the airport.\nYou see soldiers with swords and guns waiting. you know this is the end for you.\nAfter a while when you are allready out of the truck you get brought towards the soldier with the sword.\nYou put your head on the plank and you get executed.\nYour family is still stuck in the camp they later also get executed.")
+    ant37 = input("type exit:")
+
+    if ant37 == "exit" or ant37 == "EXIT":
+        exit()
+
+
+
+def option_dead4():
+    print("---------------------------------------------------")
+    print("You went outside and the moment you went outside soldiers spotted you, you tried to run away but that was not the greatest idea you got shot by the soldiers you died")
+    ant36 = input("type exit:")
+
+    if ant36 == "exit" or ant36 == "EXIT":
+        exit()
+
+
+def option_dead3():
+    print("---------------------------------------------------")
+    print("You heard the BANG!! and you ran further but making that decision was a bad decision you got shot in the head and ended up dead")
+    ant35 = input("type exit:")
+
+    if ant35 == "exit" or ant35 == "EXIT":
+        exit()
+
+
+
+def option_dead2():
+    print("---------------------------------------------------")
+    print("You Thought the option running was a good idea well that ended up being dead")
+    ant34 = input("type exit:")
+
+    if ant34 == "exit" or ant34 == "EXIT":
+        exit()
+
+
+
+
+def option_dead1():
+    print("---------------------------------------------------")
+    print("You try to run away from the japanese soldiers but you get shot by them and you die")
+    ant33 = input("type exit:")
+
+    if ant33 == "exit" or ant33 == "EXIT":
+        exit()
+
+
+
+
+
+def option_dead():
+    print("---------------------------------------------------")
+    print("You stayed and fight further against the forces of the Japanese army.\nYou tried to stop them but you couldn't all the soldiers who you fought with died.\nYou scream you shoot and then the bullets hit your body, simultanously and you die.")
+    ant32 = input("type exit:")
+
+    if ant32 == "exit" or ant32 == "EXIT":
+        exit()
+
+
+
+
 def option_story4_1():
     print("---------------------------------------------------")
-    
+    print("You decided to wait inside. While you wait japanese soldiers enters the room  where you are together with you family.\nThe soldiers says something in japanese to his fellow soldiers and they rush inside as well.\nYou get grabbed by them and your family as well.\nWhile you get grabbed you get put into a truck where more people are in.\nThe soldiers doesn't say anything and the truck drives away.\nYou ask one of the people there what whill happen when one of them replies that we are going to a nearby airport.\nThat moment you realise that this could be the end.")
+    ant31 = input("Type Continue:")
+
+    if ant31 == "continue" or ant31 == "CONTINUE":
+        option_dead6()
 
 
 
@@ -16,7 +96,7 @@ def option_story4():
     ant30 = input("type continue:")
 
     if ant30 == "continue" or ant30 == "CONTINUE":
-        option_dead4()
+        option_dead5()
 
 
 def option_story3_2():
@@ -26,7 +106,7 @@ def option_story3_2():
 
     if ant29 == "look" or ant29 == "LOOK":
         option_story4()
-    elif ant29 == "wait" or ant29 "WAIT":
+    elif ant29 == "wait" or ant29 == "WAIT":
         option_story4_1()
 
 
@@ -35,11 +115,9 @@ def option_story3_2():
 def option_story3_1():
     print("---------------------------------------------------")
     print("You leave the house together with the officer.\nYou are both are watching if there are enemies outside.\nYou both see nothing and you both flee the house.\nAfter Few hours of running you stop and take a break in the middle of the forest.\nYou hear a sound in the bushes and both of you look scared and trying to run again.\nBut the moment you want to stand up you both get grabbed by japanese soldiers.\nYou both get knocked out.\nFew hours later you both wake up tied against an tree you look up and see a gun against your head.\nYou see that this is an exicution")
-    ant28 = input("type play to play again or exit to quit:")
+    ant28 = input("type exit:")
 
-    if ant28 == "play" or ant28 == "PLAY":
-        prologue()
-    elif ant28 == "exit" or ant28 == "EXIT":
+    if ant28 == "exit" or ant28 == "EXIT":
         exit()
 
 
@@ -356,7 +434,7 @@ def prologue():
 
 
 
-print("Welcome at my textbased game about a man who worked for the sultan the game is based on true stories and bit fictional\nFirst you will have an list of instructions.")
+print("Welcome at my textbased game about a man who worked for the sultan the game is made almost in fictional but some things are a true.\nFirst you will have an list of instructions.")
 print("After the instructions the game will start, it will start with a prolugue.")
 print("Where your choices are crucial for the start of the game/storyline goodluck")
 print("Intructions: The choices you can make are displayed at every part of the game. (example fight or run)")
