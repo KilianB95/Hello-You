@@ -3,6 +3,129 @@
 # There will be choices made of how the game will start after the prologue.
 # You play as a person who works for the Sultan of Borneo(Kalimatan) and this is his story.
 
+def option_story4_1():
+    print("---------------------------------------------------")
+    
+
+
+
+
+def option_story4():
+    print("---------------------------------------------------")
+    print("You take a look and what you see is that they are putting people in a line.\nAt your suprise they are yelling names of people in the camp.\nAfter a few names your name pops up, you look terrified.\nYou know you have to get into the line, you walk towards them and you stand there together with 24 others.\nA japanese officers tell why you are here.\nAfter he's done with his speech why you are here.\nHe tells you that you will be transferd towards the airport nearby.")
+    ant30 = input("type continue:")
+
+    if ant30 == "continue" or ant30 == "CONTINUE":
+        option_dead4()
+
+
+def option_story3_2():
+    print("---------------------------------------------------")
+    print("A week later, one of your children wakes you up that you have to go to your wife immediatly.\nYou wake up and go as quick as possible, you see that an miracle has happend a son is born.\nAfter all these bad things a good thing happend you all look happy and hope for a good future.\nA few Days after the miracle, You wake up and hear lots of noices outside and cars going into the camp\nWhat will you do go take a look or just wait.")
+    ant29 = input("look or wait:")
+
+    if ant29 == "look" or ant29 == "LOOK":
+        option_story4()
+    elif ant29 == "wait" or ant29 "WAIT":
+        option_story4_1()
+
+
+
+
+def option_story3_1():
+    print("---------------------------------------------------")
+    print("You leave the house together with the officer.\nYou are both are watching if there are enemies outside.\nYou both see nothing and you both flee the house.\nAfter Few hours of running you stop and take a break in the middle of the forest.\nYou hear a sound in the bushes and both of you look scared and trying to run again.\nBut the moment you want to stand up you both get grabbed by japanese soldiers.\nYou both get knocked out.\nFew hours later you both wake up tied against an tree you look up and see a gun against your head.\nYou see that this is an exicution")
+    ant28 = input("type play to play again or exit to quit:")
+
+    if ant28 == "play" or ant28 == "PLAY":
+        prologue()
+    elif ant28 == "exit" or ant28 == "EXIT":
+        exit()
+
+
+
+def option_story3():
+    print("---------------------------------------------------")
+    print("You got captured and got brought by the japanese soldiers to a camp in the south-east of Borneo.\You we're there together with a lot of citizens who got captured during the attack.\nAfter a few days in the camp you meet an friend of yours who fought against the japanese army.\nHis name is Haga the gouvernor of Borneo.\nHe tells you about what happend and what he did.\nHe tolls you about an army he raised of 250 man together with your brother.\nWho passed away before you arrived.\nHe died of an heart attack.\nHe says that you have to keep an eye on your family and take good care of them.\nYou tell him you go back to your family and stay there for a while.")
+    ant27 = input("Family:")
+
+    if ant27 == "family" or ant27 == "FAMILY":
+        option_story3_2()
+
+
+
+
+
+def option_story2_7():
+    print("---------------------------------------------------")
+    print("You stay inside and you know it is a wise decision.\nFew hours later, the officer asks you if you want to leave the house or you want to stay in here and wait to be sure if everything is safe?")
+    ant26 == input("leave or wait:")
+
+    if ant26 == "leave" or ant26 == "LEAVE":
+        option_story3_1()
+    elif ant26 == "wait" or ant26 == "WAIT":
+        option_story3()
+
+
+
+def option_story2_6():
+    print("---------------------------------------------------")
+    print("You laydown for a few seconds but when you want to stand up you see soldiers pointing there guns at you.\nThey grab you and you are being their prisoner.")
+    ant25 = input("type continue:")
+
+    if ant25 == "continue" or ant25 == "CONTINUE":
+        option_story3()
+
+
+
+
+def option_story2_5():
+    print("---------------------------------------------------")
+    print("You went right, when you go around the corner you get grabbed by someone.\nYou think that you are busted but when you turn around you see it is one of the officers.\nYou both stay quite and go inside a house next to you.\nWhen you go in he tells you that you and him should wait here until they are al gone or when it is quite enough to go.\nWhat will you do stay inside or will you go outside?")
+    ant24 = input("inside or outside:")
+
+    if ant24 == "inside" or ant24 == "INSIDE":
+        option_story2_7()
+    elif ant24 == "outside" or ant24 == "OUTSIDE":
+        option_dead4()
+
+
+
+def option_story2_4():
+    print("---------------------------------------------------")
+    print("You went straight ahead.\nWhen you almost reach the end of the street you hear a loud BANG!!!.\nWill you lay down or run further?")
+    ant23 = input("laydown or run:")
+
+    if ant23 == "laydown" or ant23 == "LAYDOWN":
+        option_story2_6()
+    elif ant23 == "run" or ant23 == "RUN":
+        option_dead3()
+
+
+
+def option_story2_3():
+    print("---------------------------------------------------")
+    print("You went back but the moment you turn around you see soldiers coming from there aswel.\nYou know you are in a bad position, you go on your knees and surrender to them.\nBecause that is the only option right now.")
+    ant22 = ("surrender:")
+
+    if ant22 == "surrender" or ant22 == "SURRENDER":
+        option_story3()
+
+
+
+
+def option_story2_2():
+    print("---------------------------------------------------")
+    print("You went to the right, you run as fast as possible.\nBut when you do reach the end of the street you see that you can go straight ahead or to the right.\nWhich way will you go?")
+    ant21 = input("straight or right:")
+
+    if ant21 == "straight" or ant21 == "STRAIGHT":
+        option_story2_4()
+    elif ant21 == "right" or ant21 == "RIGHT":
+        option_story2_5()
+
+
+
 def option_story2_1():
     print("---------------------------------------------------")
     print("You went to left side, but when you do you see that soldiers are coming from that side aswel.\nWhat will you do go surrender or go back?")
@@ -134,14 +257,11 @@ def option_story1_6():
 
 def option_story1_5():
     print("---------------------------------------------------")
-    print("You and your family part ways they go towards the palace and you are going to the streets to get people to safety.\nAfter your arrival there you here that the japanese has entered the city.\nYou look shocked and try to get the last few people into safety before you can get yourself into safety.\nBut when you try to safe a person you see that the japanese soldiers are approaching you fast.\nYou have to make a quick decision, hide or run.")
-    ant9 = input("hide or run:")
+    print("You and your family part ways they go towards the palace and you are going to the streets to get people to safety.\nAfter your arrival there you here that the japanese has entered the city.\nYou look shocked and try to get the last few people into safety before you can get yourself into safety.\nBut when you try to safe a person you see that the japanese soldiers are approaching you fast.\nYou take the decision to run.")
+    ant9 = input("run:")
 
-    if ant9 == "hide" or ant9 == "HIDE":
-        option_story4()
-    elif ant9 == "run" or ant9 == "RUN":
+    if ant9 == "run" or ant9 == "RUN":
         option_story2()
-
 
 
 def option_story1_4():
